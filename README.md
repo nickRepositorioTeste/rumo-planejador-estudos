@@ -2,7 +2,9 @@
 
 Aplicação acadêmica para cadastrar concursos e disciplinas, configurar horários, gerar um cronograma de estudos e registrar simulados com notas calculadas conforme regras informadas pelo usuário.
 
-**Publicação: pendente.** **Repositório GitHub: pendente.** Não há URL pública confirmada.
+**Sistema publicado:** https://nickteste.pythonanywhere.com/
+
+**Repositório:** https://github.com/nickRepositorioTeste/rumo-planejador-estudos
 
 ## Funcionalidades
 
