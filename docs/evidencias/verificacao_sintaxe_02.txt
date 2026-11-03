@@ -1,0 +1,7 @@
+Comando: python -m compileall -q app.py tests
+Código de saída real: 0
+STDOUT:
+(vazio)
+STDERR:
+(vazio)
+Conclusão: verificação de sintaxe apenas; não executa Flask nem os testes.

@@ -1,0 +1,20 @@
+REFATORAÇÃO DO PROMPT 2 — verificação após alterações
+Data da etapa: 02/11/2026 (horário de Brasília; resultado pré-refatoração recebido neste dia)
+
+1) Comparação das quatro definições (AST ignorando posições): 4/4 idênticas às definições originais.
+2) Comparação de create_app (AST ignorando somente as quatro definições movidas): idêntica, sem alteração de rotas, regras, banco ou lógica.
+3) python -m compileall -q app.py validacoes.py tests: sucesso, saída silenciosa, código de saída 0.
+4) Testes diretos após mudança, importando apenas validacoes.py:
+   PASS decimal com vírgula
+   PASS decimal não finito rejeitado
+   PASS inteiro respeita mínimo
+   PASS inteiro inválido rejeitado
+   PASS data válida ISO
+   PASS horário válido HH:MM
+   Resultado: 6/6 verificações puras passaram. Não são testes integrados do Flask.
+5) python -m pytest -q (ambiente de geração): NÃO EXECUTADO ATÉ COLETA devido a ModuleNotFoundError: No module named 'flask' ao importar conftest. Nenhum resultado pós-mudança da suíte Flask neste ambiente.
+6) Testes Flask anteriores à mudança (Windows da estudante): 21 passed in 11.38s, documentados em 08_pytest_21_aprovados.png. Isso não prova regressão pós-mudança.
+7) Próxima verificação a executar no Windows, depois de aplicar esta atualização:
+   py -m pytest -q 2>&1 | Tee-Object -FilePath docs\evidencias\pytest_apos_refatoracao.txt
+
+Nenhum arquivo SQLite pessoal alterado, nenhum git commit/push ou deploy realizado nesta etapa.

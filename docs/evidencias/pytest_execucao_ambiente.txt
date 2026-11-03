@@ -1,0 +1,7 @@
+ImportError while loading conftest '/mnt/data/rumo-entrega-02/tests/conftest.py'.
+tests/conftest.py:7: in <module>
+    from app import create_app
+app.py:11: in <module>
+    from flask import Flask, abort, flash, g, redirect, render_template, request, session, url_for
+E   ModuleNotFoundError: No module named 'flask'
+exit_status=4

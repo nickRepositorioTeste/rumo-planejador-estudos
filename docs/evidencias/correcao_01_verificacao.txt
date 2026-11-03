@@ -1,0 +1,8 @@
+OK: conflito parcial, limite contíguo e isolamento entre usuários
+OK: regeneração preserva concluída e respeita sessões de outros concursos
+OK: regeneração repetida não duplica registros
+OK: duas regenerações concorrentes, em conexões independentes, sem duplicatas
+OK: edição com sobreposição rejeitada e horário original preservado
+OK: sessão adjacente é permitida (sem sobreposição)
+OK: geração sem horários livres reverte exclusões e conserva dados anteriores
+RESULTADO: 7 verificações isoladas concluídas sem falha (não são testes HTTP/pytest).
